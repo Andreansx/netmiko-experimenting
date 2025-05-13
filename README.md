@@ -16,7 +16,7 @@
 <h3>Installing dependencies</h3>
 </div>
 
-**To ensure, you are using the same dependencies as me, you can do the following:**
+**To ensure, you are using the same dependencies as me, you can setup a venv with neccessary dependencies:**
 1. clone the repository
 ```
 git clone https://github.com/andreansx/netmiko-experimenting
@@ -25,8 +25,23 @@ git clone https://github.com/andreansx/netmiko-experimenting
 ```
 cd netmiko-experimenting
 ```
-3. Run this command
+3. create a python virtual environment
+```
+python -m venv venv
+```
+4. Initialize the venv  
+> not sure of the filenames  
+  
+with cmd:
+```
+/venv/Scripts/setup.bat
+```
+with PowerShell
+```
+./venv/Scripts/setup.ps1
+```
+5. Run this command
 ```
 pip install -r requirements.txt
 ```
-**This will install dependencies listed in the `requirements.txt` file**
+**This will create a venv and install dependencies listed in the `requirements.txt` file**
